@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<f:view>
+    <h:head>
+        <meta name="charset" content="UTF-8"/>
+        <title>Web | Lab #3</title>
+        <link rel="icon" href="#{resource['images/favicon.ico']}"/>
+        <h:outputScript library="js" name="libs/jquery-3.6.0.min.js"/>
+        <h:outputStylesheet library="css" name="template_styles.css"/>
+        <ui:insert name="head"/>
+    </h:head>
+    <h:body>
+        <div class="header">
+            <h1>
+                Батаргин Егор Александрович
+            </h1>
+            <h2>
+                Группа: P32312
+                <br/>
+                Вариант: 3231209
+            </h2>
+        </div>
+
+        <div id="content">
+            <ui:insert name="content">
+                Содержимое страницы
+            </ui:insert>
+        </div>
+
+        <div class="footer">
+            <div class="social">
+                <a href="https://se.ifmo.ru/courses/web" target="_blank">
+                    <h:graphicImage library="images" name="tsopa.jpg"/>
+                </a>
+                <a href="https://vk.com/egorbatar" target="_blank">
+                    <h:graphicImage library="images" name="vk.png"/>
+                </a>
+                <a href="https://t.me/egorbatar" target="_blank">
+                    <h:graphicImage library="images" name="telegram.png"/>
+                </a>
+            </div>
+            <br/>
+            © 2023 Egor Batar. All rights reserved.
+        </div>
+    </h:body>
+</f:view>
+</html>
